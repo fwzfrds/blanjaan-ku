@@ -105,6 +105,7 @@ button.button1 {
     button.button1 {
         height: 40px;
         width: 315px;
+        font-size: 12px;
     }
 
     .role {
@@ -118,6 +119,10 @@ button.button1 {
         height: 100%;
         line-height: 40px;
         cursor: pointer;
+    }
+
+    .text2 {
+        font-size: 12px;
     }
 
   }
