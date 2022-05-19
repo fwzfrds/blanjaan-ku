@@ -22,9 +22,9 @@ body {
 .seller, .customer {
     background: rgba(219, 48, 34, 1);
     padding: 0px;
-    /* width: 100%; */
     height: 100%;
     line-height: 48px;
+    cursor: pointer;
 }
 
 .seller {
@@ -84,3 +84,40 @@ button.button1 {
     background: rgba(219, 48, 34, 1);
     /* font-size: 14px; */
 }
+
+@media only screen and (max-width: 600px) {
+    
+    h4.text1 {
+        font-weight: 400;
+        font-size: 18px !important;
+    }
+
+    input {
+        width: 315px !important;
+        height: 40px;
+    }
+
+    a.forgot-password {
+        width: 315px;
+        font-size: 14px;
+    }
+
+    button.button1 {
+        height: 40px;
+        width: 315px;
+    }
+
+    .role {
+        width: 180px;
+        height: 40px;
+    }
+    
+    .seller, .customer {
+        font-size: 13px ;
+        padding: 0px;
+        height: 100%;
+        line-height: 40px;
+        cursor: pointer;
+    }
+
+  }
