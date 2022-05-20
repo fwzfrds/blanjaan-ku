@@ -7,6 +7,10 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: metropolis-semi-bold;
+    position: relative;
+    height: max-content;
+    border: 2px solid red;
+    /* background: #9B9B9B; */
 }
 
 nav.navbar {
@@ -140,6 +144,7 @@ section {
     margin: 0px 120px;
     /* border: 1px solid black; */
     display: flex;
+    /* min-height: 100vh; */
 }
 
 .items {
@@ -353,4 +358,16 @@ input[type="checkbox"]:checked::after {
 
 .buy-button:hover {
     background-color: orange;
+}
+
+.bottom-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    section {
+        flex-direction: column;
+    }
+
 }
