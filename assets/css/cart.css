@@ -402,12 +402,13 @@ input[type="checkbox"]:checked::after {
     }
 
     .image {
-        width: 80%;
+        width: 85%;
         align-items: flex-start;
     }
 
     .image-text h3 {
         font-size: 14px;
+        margin-right: 10px;
     }
 
     .image-text p {
