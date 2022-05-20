@@ -325,6 +325,10 @@ button.payment-btn:hover {
     background: orange;
 }
 
+.bottom-nav {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
 
     body {
@@ -351,11 +355,13 @@ button.payment-btn:hover {
     section {
         margin-left: 30px;
         margin-right: 30px;
-        display: block;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .container {
         width: 350px;
+        margin-bottom: 15px;
         /* border: 2px solid red; */
     }
 
@@ -385,6 +391,7 @@ button.payment-btn:hover {
 
     .item {
         background: #FFFFFF;
+
     }
 
     .image-text h3 {
@@ -402,9 +409,14 @@ button.payment-btn:hover {
 
     .summary {
         width: 300px;
+        background: #FFFFFF;
+        margin-bottom: 80px;
     }
 
+
+    /* Bottom-nav */
     .bottom-nav {
+        display: block;
         position: fixed;
         bottom: 0px;
         width: 100vw;
