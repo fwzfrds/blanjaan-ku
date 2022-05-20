@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo/blanja-logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/cart.css">
+
+    <title>Blanja | Cart</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a class="nav-brand" href="https://www.google.com/">
+            <img src="./assets/img/logo/blanja-logo.png" alt="Blanja Icon">
+            <p class="brand-name">Blanja</p>
+        </a>
+        <div class="search">
+            <input type="text" name="" id="" placeholder="Search">
+            <div class="filter">
+                <img src="./assets/img/icon/filter.png" alt="">
+            </div>
+        </div>
+        <div class="user-menu">
+            <div class="img-container">
+                <img src="./assets/img/icon/cart.png" alt="Cart">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/bell.png" alt="Bell">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/mail.png" alt="Message">
+            </div>
+            <img src="./assets/img/icon/account-icon.png" alt="account" class="user-account">
+        </div>
+    </nav>
+
+    <h1 class="my-bag">My Bag</h1>
+
+    <section>
+        <div class="items">
+            <div class="selection">
+                <div class="check">
+                    <input class="checkbox" type="checkbox">
+                </div>
+                <p class="select">Select all items <span class="selected">(<span>2</span> items selected)</span></p>
+                <p class="del">delete</p>
+            </div>
+
+            <!-- Item -->
+            <div class="item">
+                <div class="check">
+                    <input class="checkbox" type="checkbox">
+                </div>
+                <div class="image">
+                    <img src="./assets/img/suit.png" alt="Suit">
+                    <div class="image-text">
+                        <h3>Men's formal suit - Black</h3>
+                        <p>Zalora Cloth</p>
+                    </div>
+                </div>
+                <div class="qty">
+                    <p>-</p>
+                    <p>1</p>
+                    <p>+</p>
+                </div>
+                <div class="price">
+                    <h3>$ 20.00</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="check">
+                    <input class="checkbox" type="checkbox">
+                </div>
+                <div class="image">
+                    <img src="./assets/img/denim-jacket.png" alt="Suit">
+                    <div class="image-text">
+                        <h3>Men's Jacket jeans</h3>
+                        <p>Zalora Cloth</p>
+                    </div>
+                </div>
+                <div class="qty">
+                    <p>-</p>
+                    <p>1</p>
+                    <p>+</p>
+                </div>
+                <div class="price">
+                    <h3>$ 20.00</h3>
+                </div>
+            </div>
+            <!-- Item end -->
+        </div>
+        <div class="summary">
+            <h3 class="shop-summary">Shopping summary</h3>
+            <div class="total-summary">
+                <h4 class="total">Total price</h4>
+                <h4 class="total-price">$ 40.0</h4>
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
