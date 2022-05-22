@@ -1,54 +1,620 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="./assets/img/logo/blanja-logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo/blanja-logo.png" type="image/x-icon">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/login.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Blanja | Login</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/css/home.css">
+
+    <!-- Splide Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+    <title>Blanja | Checkout</title>
 </head>
 
-<body class="d-flex align-items-center justify-content-center">
+<body>
 
-  <div class="container d-flex flex-column justify-content-center align-items-center">
-    <div class="logo d-flex justify-content-center ">
-      <img src="./assets/img/logo/blanja-logo.png" alt="Blanja-logo">
-      <h1 class="brand-name mt-3">Blanja</h1>
+    <nav class="navbar">
+        <a class="nav-brand" href="https://www.google.com/">
+            <img src="./assets/img/logo/blanja-logo.png" alt="Blanja Icon">
+            <p class="brand-name">Blanja</p>
+        </a>
+        <div class="search">
+            <input type="text" name="" id="" placeholder="Search">
+            <div class="filter">
+                <img src="./assets/img/icon/filter.png" alt="">
+            </div>
+        </div>
+        <div class="user-menu">
+            <div class="img-container">
+                <img src="./assets/img/icon/cart.png" alt="Cart">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/bell.png" alt="Bell">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/mail.png" alt="Message">
+            </div>
+            <img src="./assets/img/icon/account-icon.png" alt="account" class="user-account">
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+
+    <!-- Trend Carousel -->
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="./assets/img/trend-carousel/2.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/3.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/2.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/3.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/2.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/3.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/2.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/3.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/2.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/3.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/2.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/3.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/2.png" alt=""></div>
+        <div class="item"><img src="./assets/img/trend-carousel/3.png" alt=""></div>
     </div>
-    <h4 class="text1 text-center mt-4 fs-5">Please login with your account</h4>
 
-    <div class="role row mt-4 align-items-center justify-content-center text-center">
-      <p class="customer col-6">Customer</p>
-      <p class="seller col-6">Seller</p>
+    <!-- Category Carousel -->
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="category-card t-shirt">
+                        <img src="./assets/img/t-shirt.png" alt="t-shirt">
+                        <h3 class="category-name">T-Shirt</h3>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="category-card shorts">
+                        <img src="./assets/img/shorts.png" alt="shorts">
+                        <h3 class="category-name">Shorts</h3>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="category-card jacket">
+                        <img src="./assets/img/jacket.png" alt="jacket">
+                        <h3 class="category-name">Jacket</h3>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="category-card pants">
+                        <img src="./assets/img/pants.png" alt="pants">
+                        <h3 class="category-name">Pants</h3>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="category-card shoes">
+                        <img src="./assets/img/shoes.png" alt="shoes">
+                        <h3 class="category-name">Shoes</h3>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="category-card suit">
+                        <img src="./assets/img/black-suit.png" alt="suit">
+                        <h3 class="category-name">Suit</h3>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="category-card sandal">
+                        <img src="./assets/img/sandal.png" alt="sandal">
+                        <h3 class="category-name">Sandal</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <div class="container">
+        <h3 class="new-title">New</h3>
+        <p class="new-text">You've never seen it before</p>
+        <div class="products">
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="input-container row mt-4 justify-content-center">
-      <input class="mt-3" type="email" placeholder="email" autofocus>
-      <input class="mt-3" type="password" placeholder="password">
-      <a class="forgot-password p-0 mt-4 text-decoration-none text-right">Forgot password ?</a>
+    <div class="container">
+        <h3 class="new-title">Popular</h3>
+        <p class="new-text">Find clothes that are trending recently</p>
+        <div class="products">
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <img src="./assets/img/suit-lscape.png" alt="suit">
+                <div class="prod-name-container">
+                    <h4 class="prod-name">Men's formal suit - Black & White</h4>
+                    <h4 class="prod-price">$ 40.0</h4>
+                    <h3 class="store-name">Zalora CLoth</h3>
+                    <div class="prod-rate">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                        <img src="./assets/img/icon/Star.png" alt="rating">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <button type="button" class="button1 btn rounded-pill text-white mt-4">PRIMARY</button>
+    <!-- bottom-navbar -->
+    <nav class="bottom-nav">
+        <div class="bottom-menu">
+            <div class="img-container">
+                <img src="./assets/img/logo/blanja-logo.png" alt="Logo" class="bottom-logo">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/cart.png" alt="Cart">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/bell.png" alt="Bell">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/mail.png" alt="Message">
+            </div>
+            <img src="./assets/img/icon/account-icon.png" alt="account" class="user-account">
+        </div>
+    </nav>
 
-    <p class="text2 mt-4">Don't have a Blanja account? <a href="#" class="text-decoration-none">Register</a></p>
+    <script src="./assets/script/categoryCarouse.js"></script>
 
-  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-
+    <script src="./assets/script/jquery.mousewheel.min.js"></script>
+    <script src="./assets/script/trendCarousel.js"></script>
 </body>
 
 </html>
