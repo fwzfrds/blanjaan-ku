@@ -141,13 +141,29 @@ div.owl-carousel.owl-theme {
     margin-top: 147px;
 }
 
-div.owl-carousel.owl-theme .item{
+div.owl-carousel.owl-theme .item {
     height: 180px;
     width: 456px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
 }
 
-div.owl-carousel.owl-theme .item img{
+div.owl-carousel.owl-theme .item:hover {
+    opacity: 0.7;
+}
+
+div.owl-carousel.owl-theme .item img {
     border-radius: 8px !important;
+}
+
+div.owl-carousel.owl-theme .item h3 {
+    color: #FFFFFF !important;
+    position: absolute !important;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
 }
 
 .owl-item {
@@ -185,17 +201,20 @@ div.owl-carousel.owl-theme .item img{
     transition: 0.2s ease-in-out;
 }
 
-.owl-carousel button.owl-prev:hover, .owl-carousel button.owl-next:hover {
+.owl-carousel button.owl-prev:hover,
+.owl-carousel button.owl-next:hover {
     background-color: orange !important;
 }
 
-button.owl-prev span, button.owl-next span {
+button.owl-prev span,
+button.owl-next span {
     font-size: 30px !important;
     line-height: 100%;
     color: rgba(155, 155, 155, 1);
 }
 
-button.owl-prev:hover span, button.owl-next:hover span {
+button.owl-prev:hover span,
+button.owl-next:hover span {
     color: #FFFFFF;
 }
 
@@ -218,20 +237,17 @@ button.owl-prev:hover span, button.owl-next:hover span {
     z-index: 2;
 }
 
-.owl-dots .owl-dot.active span{
+.owl-dots .owl-dot.active span {
     width: 30px !important;
     background: rgba(204, 11, 4, 1) !important;
 }
 
-.owl-dots .owl-dot:hover span{
+.owl-dots .owl-dot:hover span {
     /* width: 30px !important; */
     background: rgba(204, 11, 4, 1) !important;
 }
 
-/* .owl-stage {
-    border: 2px solid black;
-    z-index: 99;
-} */
+
 
 /* Category Carousel */
 section.splide {
@@ -288,15 +304,6 @@ h3.category-name {
     position: absolute;
     font-size: 30px;
 }
-
-/* .trend-carousel {
-    width: 1049px;
-    height: 190px;
-    border: 2px solid black;
-    margin: 0px auto;
-    margin-top: 147px;
-} */
-
 
 /* Products */
 div.container {
@@ -390,7 +397,6 @@ div.prod-rate img {
     nav.navbar {
         display: none;
     }
-
 
     /* Bottom-nav */
     .bottom-nav {

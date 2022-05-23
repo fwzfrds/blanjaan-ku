@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo/blanja-logo.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/css/selling-product.css">
+
+    <link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet" />
+
+    <title>Blanja | Selling Product</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a class="nav-brand" href="https://www.google.com/">
+            <img src="./assets/img/logo/blanja-logo.png" alt="Blanja Icon">
+            <p class="brand-name">Blanja</p>
+        </a>
+        <div class="search">
+            <input type="text" name="" id="" placeholder="Search">
+            <div class="filter">
+                <img src="./assets/img/icon/filter.png" alt="">
+            </div>
+        </div>
+        <div class="user-menu">
+            <div class="img-container">
+                <img src="./assets/img/icon/cart.png" alt="Cart">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/bell.png" alt="Bell">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/mail.png" alt="Message">
+            </div>
+            <img src="./assets/img/icon/account-icon.png" alt="account" class="user-account">
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-nav">
+            <div class="profile">
+                <img src="./assets/img/icon/user-account.png" alt="" class="profile-img">
+                <div class="profile-text">
+                    <h3 class="name">Johanes Mikael</h3>
+                    <div class="profile-action">
+                        <img src="./assets/img/icon/edit.png" alt="" class="edit-icon">
+                        <p>Edit Profile</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-menu">
+                <div class="menu-item">
+                    <div class="menu-icon my-account">
+                        <img src="./assets/img/icon/user-icon.png" alt="">
+                    </div>
+                    <p class="menu-text">Store</p>
+                    <img src="./assets/img/icon/bottom-arrow.png" class="bottom">
+                </div>
+                <div class="menu-item active-menu">
+                    <div>
+                        <div class="menu-icon ship-address">
+                            <img src="./assets/img/icon/location.png" alt="">
+                        </div>
+                        <p class="menu-text active-text">Product</p>
+                        <img src="./assets/img/icon/up-arrow.png" class="bottom">
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon my-order">
+                        <img src="./assets/img/icon/clipboard.png" alt="">
+                    </div>
+                    <p class="menu-text">Order</p>
+                    <img src="./assets/img/icon/bottom-arrow.png" class="bottom">
+                </div>
+            </div>
+        </div>
+        <div class="product-data">
+            <div class="inventory">
+                <h3 class="invent-title">Inventory</h3>
+                <hr class="hr-invent">
+                <div class="invent-form">
+                    <label for="invent">Name of Goods</label>
+                    <input type="text" id="invent">
+                </div>
+            </div>
+            <div class="item-details">
+                <h3 class="details-title">Item Details</h3>
+                <hr class="hr-invent">
+                <div class="unit-price">
+                    <label for="price">Unit Price</label>
+                    <input type="text" id="price">
+                </div>
+                <div class="unit-qty">
+                    <label for="stock">Stock</label>
+                    <input type="text" id="stock">
+                </div>
+                <div class="unit-qty-radio">
+                    <label>Stock</label>
+                    <div class="radio-buttons">
+                        <div class="new-radio">
+                            <input type="radio" id="new" name="radio">
+                            <label for="new">Baru</label>
+                        </div>
+                        <div class="new-radio">
+                            <input type="radio" id="new" name="radio">
+                            <label for="new">Bekas</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-photos">
+                <h3 class="photos-title">Photos of goods</h3>
+                <hr class="hr-invent">
+                <div class="photos-container">
+                    <div class="photos-area">
+                        <div class="main-photo">
+                            <div class="photo-container">
+                                <img src="./assets/img/icon/box-lg.png" alt="">
+                            </div>
+                            <p>Foto Utama</p>
+                        </div>
+                        <div class="photos">
+                            <div class="photo">
+                                <img src="./assets/img/icon/box-md.png" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./assets/img/icon/box-md.png" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./assets/img/icon/box-md.png" alt="">
+                            </div>
+                            <div class="photo">
+                                <img src="./assets/img/icon/box-md.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr-photo">
+                    <button class="photo-btn">Upload foto</button>
+                </div>
+            </div>
+            <div class="product-desc">
+                <h3 class="desc-title">Description</h3>
+                <hr class="hr-invent">
+                <div class="text-editor">
+                    <!-- <img src="./assets/img/icon/text-actions.png" alt="">
+                    <hr> -->
+                    <div id="editor">
+                        <p>Hello World!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="sell-btn">Jual</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- bottom-navbar -->
+    <nav class="bottom-nav">
+        <div class="bottom-menu">
+            <div class="img-container">
+                <img src="./assets/img/logo/blanja-logo.png" alt="Logo" class="bottom-logo">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/cart.png" alt="Cart">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/bell.png" alt="Bell">
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/icon/mail.png" alt="Message">
+            </div>
+            <img src="./assets/img/icon/account-icon.png" alt="account" class="user-account">
+        </div>
+    </nav>
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.0.0/quill.js"></script>
+
+    <!-- Initialize Quill editor -->
+    <script src="./assets/script/quilTextEditor.js"></script>
+
+</body>
+
+</html>
