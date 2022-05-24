@@ -6,7 +6,7 @@ owl.owlCarousel({
     nav: true,
     touchDrag: true,
     mouseDrag: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 3000,
     items: 2,
     stagePadding: 50,
