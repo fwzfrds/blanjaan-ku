@@ -341,6 +341,12 @@ div.prod-card {
     width: 208px;
     height: fit-content;
     box-shadow: 0px 0px 14px rgba(173, 173, 173, 0.25);
+    cursor: pointer;
+    transition: 0.125s ease-in-out;
+}
+
+div.prod-card:hover {
+    opacity: 0.75;
 }
 
 div.prod-card img {
