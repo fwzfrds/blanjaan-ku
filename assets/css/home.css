@@ -481,6 +481,10 @@ div.prod-rate img {
         height: 90px;
     }
 
+    h3.category-name {
+        font-size: 18px;
+    }
+
     /* Products */
     div.container {
         margin: 0px 20px;
