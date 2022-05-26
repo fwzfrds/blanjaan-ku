@@ -465,7 +465,33 @@ div.prod-rate img {
     div.owl-carousel.owl-theme {
         margin: 0px 20px;
         margin-top: 80px;
-        width: 89vw;
+        width: 90vw;
+    }
+
+    div.owl-item {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+        width: 100vw !important;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.owl-item.active {
+        margin: 0px auto;
+    }
+
+    div.owl-carousel.owl-theme .item h3 {
+        font-size: 18px;
+    }
+
+    .owl-nav {
+        display: none;
+    }
+
+    .owl-dots {
+        display: none;
     }
 
     /* Category Carousel */
@@ -493,11 +519,13 @@ div.prod-rate img {
     }
 
     .products {
-        gap: 10px;
+        gap: 0px;
+        justify-content: space-around;
     }
 
     div.prod-card {
         width: 170px;
+        margin-bottom: 15px;
     }
 
     /* Bottom-nav */
@@ -530,4 +558,36 @@ div.prod-rate img {
         height: 24px;
     }
 
+}
+
+@media only screen and (max-width: 375px) {
+
+    /* Category Carousel */
+    div.category-card {
+        width: 150px;
+    }
+
+    /* Products */
+    div.prod-card {
+        width: 155px;
+        margin-bottom: 10px;
+    }
+
+    .prod-name-container {
+        margin: 0px 10px;
+        width: 140px;
+    }
+
+    h4.prod-name {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    div.prod-card {
+        width: 150px;
+    }
 }

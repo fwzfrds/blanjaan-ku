@@ -7,6 +7,12 @@ var splide = new Splide('.splide', {
             width: '90vw',
             height: '120px',
             gap: 5
+        },
+        375: {
+            perPage: 2,
+            width: '90vw',
+            height: '120px',
+            gap: 0
         }
     },
     width: '1149px',
