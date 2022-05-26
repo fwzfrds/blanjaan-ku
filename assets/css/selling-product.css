@@ -579,6 +579,181 @@ hr.hr-invent {
         display: none;
     }
 
+    /* Profile Nav */
+    .profile-nav {
+        width: 100vw;
+        min-height: 0px;
+        background-color: #FFFFFF;
+        /* border: 1px solid black; */
+        position: fixed;
+        z-index: 2;
+    }
+
+    .profile {
+        display: flex;
+        width: max-content;
+        gap: 13.75px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .menu-item img.bottom {
+        display: none;
+    }
+
+    .profile-menu {
+        /* border: 1px solid black; */
+        margin: 20px;
+        width: 90vw;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .menu-item {
+        display: flex;
+        gap: 0px;
+    }
+
+    .menu-item.active-menu div.item {
+        width: 100% !important;
+        gap: 0px;
+    }
+
+    .menu-text {
+        margin-left: 10px;
+    }
+
+    .sub-menu {
+        display: none;
+    }
+
+    /* Product Data */
+    .product-data {
+        width: 100vw;
+        min-height: 100vh;
+        margin: 0px 20px;
+        margin-top: 176px;
+    }
+
+    .inventory {
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 90vw;
+    }
+
+    .invent-form input,
+    .unit-price input,
+    .unit-qty input {
+        width: 90%;
+        height: 43px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .item-details {
+        position: relative;
+        margin-top: 30px;
+        margin-left: 0px;
+        background: #FFFFFF;
+        width: 100%;
+        height: max-content;
+    }
+
+    .unit-qty::after {
+        top: 50px;
+        left: 260px;
+    }
+
+    .unit-qty-radio {
+        margin-bottom: 20px;
+    }
+
+    .photos-container {
+        /* margin-top: 0px !important; */
+        /* margin-right: 30px; */
+        width: 83%;
+        margin-bottom: 30px;
+    }
+
+    .product-photos {
+        margin-left: 0px;
+        width: 90vw;
+        height: max-content;
+    }
+
+    .photos-area {
+        flex-direction: column;
+        width: 87%;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 10px;
+    }
+
+    .photo-container {
+        width: 100%;
+    }
+
+    .main-photo {
+        position: relative;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .main-photo p {
+        display: none;
+    }
+
+    .photos {
+        width: 100%;
+        justify-content: space-between !important;
+        gap: 10px;
+    }
+
+    .photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .hr-photo {
+        margin: 0px 20px;
+        margin-top: 20px;
+    }
+    
+    .photo-btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 87%;
+    }
+
+    .product-desc {
+        margin-left: 0px;
+        width: 90vw;
+        height: 550px;
+    }
+
+    .text-editor {
+        width: 85% !important;
+        margin-bottom: 50px;
+    }
+
+    .btn-container {
+        margin-left: 0px;
+        width: 90vw;
+        text-align: start;
+        margin-bottom: 75px;
+    }
+
+    .sell-btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+
     /* Bottom-nav */
     .bottom-nav {
         display: block;
