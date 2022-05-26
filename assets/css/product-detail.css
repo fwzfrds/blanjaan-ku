@@ -639,6 +639,7 @@ section.search-mobile {
 
     section .search-container input::placeholder {
         color: #9B9B9B;
+        font-size: 14px;
     }
 
     .filter-container {
