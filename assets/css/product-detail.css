@@ -804,13 +804,13 @@ section.search-mobile {
     }
 
     .product-card {
-        width: 165px;
+        width: 181px;
         height: max-content;
         margin-bottom: 10px;
     }
 
     h3.prod-name {
-        width: 140px;
+        width: 155px;
         font-size: 14px;
         line-height: 16px;
         margin: 0px 12px;
@@ -832,5 +832,9 @@ section.search-mobile {
         width: 160px;
         height: max-content;
         margin-bottom: 10px;
+    }
+
+    h3.prod-name {
+        width: 140px;
     }
 }
