@@ -475,7 +475,11 @@ div.birth-date label.birth-field-name {
 
     .menu-item {
         display: flex;
-        gap: 10px;
+        gap: 0px;
+    }
+
+    .menu-text {
+        margin-left: 10px;
     }
 
     /* Profile Data */
@@ -563,8 +567,6 @@ div.birth-date label.birth-field-name {
         margin-left: 0px;
         justify-content: center;
     }
-    
-
 
     /* Bottom-nav */
     .bottom-nav {
